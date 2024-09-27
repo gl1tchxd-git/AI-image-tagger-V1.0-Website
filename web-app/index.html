@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="results-number">RESULT-NUMBER</h1>
+        <h1 id="title">Image Browser</h1>
+        <a href="./fileUpload.html">
+            <button id="file-up-btn">Upload files</button>
+        </a>
+
+        <div class="search-frame">
+            <label for="search-input">Enter tags:</label>
+            <div class="autocomplete-container">
+
+
+                <div class="search-input">
+                    <input class="input input-alt" type="text" id="search-input" autocomplete="off" placeholder="Search tags...">
+                    <span class="input-border input-border-alt"></span>
+                </div>
+                <div id="autocomplete-list"></div>
+
+
+
+            </div>
+            <button class="button" id="search-button">
+                <div class="text">
+                  Search
+            </div>
+
+            <button class="button" id="index-button">
+                <div class="text">
+                  Index images
+            </div>
+
+            <button class="button" id="process-folder-button">
+                <div class="text">
+                  Process folder
+            </div>
+
+        </div>
+        <div id="results-frame"></div>
+        <button id="load-more" style="display: none;">Load More</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
